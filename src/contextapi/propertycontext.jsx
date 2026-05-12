@@ -32,7 +32,7 @@ export const PropertyProvider = ({ children }) => {
       setError(null);
 
       const res = await axios.get(
-        `https://deal-acres-backend.onrender.com/api/listed-properties/getPropertiesByDomain/${domain}`
+        `https://faridabad-backend.onrender.com/api/listed-properties/getPropertiesByDomain/${domain}`
       );
 console.log("API Response:", res.data);
       setProperties(res.data?.data || []);
@@ -65,7 +65,7 @@ console.log("API Response:", res.data);
       setError2(null);
 
       const response = await axios.get(
-        `https://deal-acres-backend.onrender.com/api/listed-properties/getPropertiesByDomainAndLocality/${domain}/${decodeSlugWithHyphen(locality)}`
+        `https://faridabad-backend.onrender.com/api/listed-properties/getPropertiesByDomainAndLocality/${domain}/${decodeSlugWithHyphen(locality)}`
       );
 
       setData(response?.data?.data || []);
