@@ -1,33 +1,38 @@
 import React from "react";
-import { headers } from "next/headers";
 import BlogList from "./BlogList";
 
 export async function generateMetadata() {
-  const h = await headers();
-  const domain = h.get("host") || "localhost";
-
-  // remove www
-  const cleanDomain = domain.replace(/^www\./, "");
-
   return {
-    title: "Commercial Property Blogs | Investment Insights Faridabad",
-    description:
-      "Explore commercial real estate blogs, investment strategies, rental yield insights and business property trends in Faridabad.",
-    keywords: [
-      "commercial property blogs",
-      "real estate investment tips",
-      "rental yield insights",
-      "commercial property Faridabad",
-      "property market trends",
-      "business property investment"
-    ],
+   title:
+  "Commercial Projects Blog | New Launches, Property Updates & Investment Insights in Faridabad",
+
+description:
+  "Explore the latest blogs on commercial projects in Faridabad, new project launches, luxury apartments, builder floors, affordable housing developments, investment opportunities, market trends, and expert home buying advice.",
+
+keywords: [
+  "commercial projects Faridabad",
+  "new commercial projects Faridabad",
+  "luxury apartments Faridabad",
+  "builder floors Faridabad",
+  "affordable housing Faridabad",
+  "upcoming projects Faridabad",
+  "property investment Faridabad",
+  "real estate trends Faridabad",
+  "home buying guide Faridabad",
+  "best commercial projects Faridabad",
+  "commercial property news Faridabad",
+  "Nehar Par projects Faridabad",
+  "apartments in Faridabad",
+  "housing projects Faridabad",
+  "real estate blog Faridabad"
+],
     alternates: {
-      canonical: `https://${cleanDomain}/blog`,
+      canonical: "www.commercialprojectsinfaridabad.com/blog", // 🔥 apna real domain yaha replace karna
     },
   };
 }
 
-const page = () => {
+const Page = () => {
   return (
     <div className="min-h-screen bg-[#0f172a]">
       <BlogList />
@@ -35,4 +40,4 @@ const page = () => {
   );
 };
 
-export default page;
+export default Page;

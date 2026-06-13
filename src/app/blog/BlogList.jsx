@@ -2,7 +2,9 @@
 import React from "react";
 import Link from "next/link";
 import Image from "next/image";
-
+import { useBlog } from "@/contextapi/BlogContext";
+import Pagination from "@/components/Pagination";
+import Breadcrumb from "@/components/Breadcrumb";
 // Date formatter
 const formatDate = (date) => {
   if (!date) return "";
@@ -13,144 +15,152 @@ const formatDate = (date) => {
 };
 
 export default function BlogList() {
+  const { blogs, loading, error, page, total, limit, fetchBlogs } = useBlog();
 
-  const loading = false;
-  const error = null;
+  const handlePageChange = (pageNum) => {
+    fetchBlogs(pageNum);
 
-  const blogs = [
-    {
-      _id: "1",
-      Slug: "digital-marketing-for-real-estate",
-      HeroImg: {
-        url: "https://images.unsplash.com/photo-1556761175-4b46a572b786",
-      },
-      HeroAltText: "Digital Marketing for Real Estate",
-      Category: "Real Estate",
-      Title: "How Digital Marketing Helps Commercial Real Estate Grow Faster",
-      Date: "2024-05-10",
-    },
-    {
-      _id: "2",
-      Slug: "seo-tips-for-property-dealers",
-      HeroImg: {
-        url: "https://images.unsplash.com/photo-1522202176988-66273c2fd55f",
-      },
-      HeroAltText: "SEO Tips for Property Dealers",
-      Category: "SEO",
-      Title: "Top SEO Strategies for Commercial Property Consultants",
-      Date: "2024-04-22",
-    },
-    {
-      _id: "3",
-      Slug: "social-media-for-real-estate",
-      HeroImg: {
-        url: "https://images.unsplash.com/photo-1519389950473-47ba0277781c",
-      },
-      HeroAltText: "Social Media Marketing for Real Estate",
-      Category: "Marketing",
-      Title: "Using Social Media to Generate High-Intent Investment Leads",
-      Date: "2024-03-18",
-    },
-  ];
+    const section = document.getElementById("blog-section");
+    if (section) {
+      const yOffset = -80;
+      const y =
+        section.getBoundingClientRect().top +
+        window.pageYOffset +
+        yOffset;
+
+      window.scrollTo({ top: y, behavior: "smooth" });
+    }
+  };
 
   return (
-    <section className="px-4 sm:px-6 lg:px-0 max-w-7xl mx-auto py-20 bg-[#0f172a] text-white">
-
+    <section
+      id="blog-section"
+      className="px-4 sm:px-6 lg:px-0 max-w-7xl mx-auto py-16 bg-[#0f172a] text-white"
+    >
+      <div className="mb-6">
+        <Breadcrumb />
+      </div>
       {/* ===== HEADING ===== */}
-      <div className="text-center mb-16">
-        <h2 className="text-3xl md:text-4xl font-bold">
+      <div className="mb-14">
+        <h1 className="text-3xl md:text-4xl font-bold text-white">
           Latest Insights &{" "}
-          <span className="text-[#FFA6A6]">Commercial Real Estate Updates</span>
-        </h2>
+          <span className="bg-gradient-to-r from-[#FFA6A6] to-[#ff8f8f] bg-clip-text text-transparent">
+            Investment Updates
+          </span>
+        </h1>
 
-        <p className="text-gray-400 mt-4 max-w-2xl mx-auto">
-          Stay updated with expert strategies, investment insights and
-          commercial property trends to grow your real estate business.
+        <p className="text-gray-400 mt-4 max-w-2xl">          Stay updated with expert insights, investment strategies, and
+          property market trends to grow your portfolio smarter.
         </p>
 
-        <div className="w-20 h-1 bg-[#FFA6A6] mx-auto mt-6 rounded-full"></div>
-      </div>
-
-      {/* ===== LOADING ===== */}
+        <div className="w-20 h-1 bg-[#FFA6A6] mt-6 rounded-full"></div>      
+         </div>
+      {/* ===== LOADING */}
       {loading && (
         <div className="flex justify-center py-20">
           <div className="relative w-14 h-14">
-            <div className="absolute inset-0 rounded-full border-4 border-white/10"></div>
-            <div className="absolute inset-0 rounded-full border-4 border-transparent border-t-[#FFA6A6] border-r-[#ff8f8f] animate-spin"></div>
+            <div className="absolute inset-0 rounded-full border-4 border-[#FFB200]/20"></div>
+            <div className="absolute inset-0 rounded-full border-4 border-transparent border-t-[#FFB200] border-r-[#e39b00] animate-spin"></div>
           </div>
         </div>
       )}
 
-      {/* ===== ERROR ===== */}
+      {/* ===== ERROR */}
       {error && !loading && (
-        <div className="text-center py-16">
-          <h2 className="text-xl font-semibold text-red-400 mb-3">
-            Something went wrong
-          </h2>
-          <p className="text-gray-400">
-            Unable to load blogs right now.
-          </p>
-        </div>
+        <div className="text-center py-16 text-red-500">{error}</div>
       )}
 
-      {/* ===== BLOG GRID ===== */}
-      {!loading && !error && blogs?.length > 0 && (
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10">
+      {/* ===== BLOG GRID */}
+   {/* ===== BLOG GRID ===== */}
+{!loading && !error && Array.isArray(blogs) && blogs.length > 0 && (
+  <>
+    <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10">
+      {blogs.map((post, index) => (
+        <Link
+          href={`/blog/${post?.Slug || post?.slug || ""}`}
+          key={post?._id || index}
+          className="group bg-[#1f2937] rounded-2xl overflow-hidden shadow-sm
+          hover:shadow-2xl border border-white/10
+          transition duration-300 hover:-translate-y-1"
+        >
+          {/* IMAGE */}
+          <div className="overflow-hidden">
+            <Image
+              src={
+                post?.HeroImg?.url ||
+                post?.heroImg?.url ||
+                post?.image ||
+                "/fallback.jpg"
+              }
+              unoptimized
+              alt={post?.HeroAltText || post?.alt || "blog image"}
+              width={600}
+              height={350}
+              className="w-full h-56 object-cover group-hover:scale-105 transition-transform duration-500"
+            />
+          </div>
 
-          {blogs.map((post, index) => (
-            <Link
-              href={`/blog/${post.Slug}`}
-              key={index}
-              className="group bg-[#1f2937] rounded-2xl overflow-hidden 
-              shadow-lg hover:shadow-2xl border border-white/10 
-              transition duration-300 hover:-translate-y-1"
+          {/* CONTENT */}
+          <div className="p-6">
+            <span
+              className="inline-block text-xs font-semibold
+              bg-[#FFA6A6]/10 text-[#FFA6A6]
+              px-3 py-1 rounded-full mb-3"
             >
+              {post?.Category || post?.category || "General"}
+            </span>
 
-              {/* IMAGE */}
-              <div className="overflow-hidden">
-                <Image
-                  src={post.HeroImg?.url}
-                  alt={post?.HeroAltText}
-                  width={600}
-                  height={350}
-                  className="w-full h-56 object-cover group-hover:scale-105 transition-transform duration-500"
-                />
-              </div>
+            <h2 className="text-lg font-semibold text-white leading-snug mb-3 group-hover:text-[#FFA6A6] transition">
+              {post?.Title || post?.title || "No Title"}
+            </h2>
 
-              {/* CONTENT */}
-              <div className="p-6">
+            <p className="text-sm text-gray-400">
+              {formatDate(post?.Date || post?.date)}
+            </p>
+          </div>
+        </Link>
+      ))}
+    </div>
 
-                {/* CATEGORY */}
-                <span className="inline-block text-xs font-semibold 
-                bg-[#FFA6A6] text-black px-3 py-1 rounded-full mb-3">
-                  {post.Category}
-                </span>
+    {/* PAGINATION */}
+    <div className="mt-12">
+      <Pagination
+        totalItems={total}
+        itemsPerPage={limit}
+        currentPage={page}
+        onPageChange={handlePageChange}
+      />
+    </div>
+  </>
+)}
+   
+ 
 
-                {/* TITLE */}
-                <h3 className="text-lg font-semibold leading-snug mb-3 group-hover:text-[#FFA6A6] transition-colors duration-300">
-                  {post.Title}
-                </h3>
+{/* EMPTY */ }
+{
+  !loading && !error && Array.isArray(blogs) && blogs.length === 0 && (
+    <div className="flex flex-col items-center justify-center text-center py-20">
 
-                {/* DATE */}
-                <p className="text-sm text-gray-400">
-                  {formatDate(post.Date)}
-                </p>
+      <h3 className="text-2xl md:text-3xl font-bold text-white">
+        Blogs Coming Soon 🚀
+      </h3>
 
-              </div>
+      <p className="text-gray-400 mt-3 max-w-md">            We are working on some amazing investment insights.
+      </p>
 
-            </Link>
-          ))}
+      <button
+        onClick={() => window.location.reload()}
+        className="mt-6 px-6 py-2 rounded-lg
+bg-gradient-to-r from-[#FFA6A6] to-[#ff8f8f]
+text-black hover:opacity-90 transition font-semibold"
+      >
+        Refresh
+      </button>
 
-        </div>
-      )}
+    </div>
+  )
+}
 
-      {/* ===== EMPTY ===== */}
-      {!loading && !error && blogs?.length === 0 && (
-        <div className="text-center py-16 text-gray-400">
-          No blogs found.
-        </div>
-      )}
-
-    </section>
+    </section >
   );
 }

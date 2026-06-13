@@ -24,3 +24,56 @@ body {
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
 }
+.quill-content .ql-editor,
+.quill-content .ql-editor p,
+.quill-content .ql-editor span,
+.quill-content .ql-editor div,
+.quill-content .ql-editor li,
+.quill-content .ql-editor ul,
+.quill-content .ql-editor ol {
+  color: #ffffff !important;
+}
+
+.quill-content .ql-editor h1,
+.quill-content .ql-editor h2,
+.quill-content .ql-editor h3,
+.quill-content .ql-editor h4,
+.quill-content .ql-editor h5,
+.quill-content .ql-editor h6 {
+  color: #ffffff !important;
+}
+
+.quill-content .ql-editor strong,
+.quill-content .ql-editor b {
+  color: #ffffff !important;
+}
+
+.quill-content .ql-editor a {
+  color: #FFA6A6 !important;
+}
+.quill-content .ql-editor,
+.quill-content .ql-editor p,
+.quill-content .ql-editor span,
+.quill-content .ql-editor div,
+.quill-content .ql-editor li,
+.quill-content .ql-editor ul,
+.quill-content .ql-editor ol,
+.quill-content .ql-editor strong,
+.quill-content .ql-editor b {
+  color: #ffffff !important;
+}
+
+.quill-content .ql-editor h1,
+.quill-content .ql-editor h2,
+.quill-content .ql-editor h3,
+.quill-content .ql-editor h4,
+.quill-content .ql-editor h5,
+.quill-content .ql-editor h6 {
+  color: #ffffff !important;
+}
+
+/* Links ko default blue hi rehne do */
+.quill-content .ql-editor a {
+  color: #60a5fa !important;
+  text-decoration: underline;
+}

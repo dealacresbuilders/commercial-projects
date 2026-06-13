@@ -17,15 +17,13 @@ const Navbar = () => {
       <nav className="sticky top-0 z-50 backdrop-blur-xl bg-[#111827]/90 border-b border-white/10 px-4 sm:px-6">
         <div className="max-w-7xl mx-auto">
           <div className="flex items-center justify-between h-[72px]">
-
             {/* LOGO */}
             <Link
               href="/"
               className="text-xl sm:text-2xl font-bold tracking-wide text-white hover:text-[#FFA6A6] transition duration-300"
             >
-              Commercial Projects Faridabad
+              DA
             </Link>
-
             {/* ================= DESKTOP LINKS ================= */}
             <div className="hidden md:flex items-center gap-8">
 

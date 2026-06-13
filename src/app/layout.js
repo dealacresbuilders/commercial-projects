@@ -1,10 +1,11 @@
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import Navbar from "@/components/Navbar";
-import { PropertyProvider } from "@/contextapi/propertycontext"; // ✅ ADD THIS
+import { ProjectProvider } from "@/contextapi/propertycontext"; // ✅ ADD THIS
 import Footer from "@/components/Footer";
 import ScrollToTop from "@/components/ScrollToTop";
 import { Toaster } from "react-hot-toast";
+import { BlogProvider } from "@/contextapi/BlogContext";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -28,14 +29,16 @@ export default function RootLayout({ children }) {
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
         {/* ✅ Provider Wrap Start */}
-        <PropertyProvider>
+        <ProjectProvider>
+          <BlogProvider>
           <Navbar />
           {children}
           <ScrollToTop />
                     <Toaster position="top-right" reverseOrder={false} />
 
           <Footer/>
-        </PropertyProvider>
+          </BlogProvider>
+        </ProjectProvider>
         {/* ✅ Provider Wrap End */}
       </body>
     </html>
