@@ -18,8 +18,51 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata = {
-  title: "commercial projects Faridabad",
-  description: "Find verified commercial projects in Faridabad with best deals.",
+  title:
+    "Commercial Projects in Faridabad | Office Spaces, Retail Shops & Investment Properties",
+
+  description:
+    "Explore verified commercial projects in Faridabad including office spaces, retail shops, SCO plots, food courts, and investment opportunities. Compare prices, locations, builders, and commercial property options across prime sectors of Faridabad.",
+
+  keywords: [
+    "commercial projects in Faridabad",
+    "commercial property Faridabad",
+    "office space in Faridabad",
+    "retail shops in Faridabad",
+    "commercial investment Faridabad",
+    "SCO plots Faridabad",
+    "commercial real estate Faridabad",
+    "food court investment Faridabad",
+    "business space Faridabad",
+    "commercial property for sale Faridabad",
+    "shops for sale Faridabad",
+    "office spaces Faridabad",
+    "commercial projects NCR",
+    "commercial property Haryana",
+    "investment property Faridabad",
+  ],
+
+  alternates: {
+    canonical: "https://www.commercialprojectsinfaridabad.com/",
+  },
+
+  openGraph: {
+    title:
+      "Commercial Projects in Faridabad | Office Spaces, Retail Shops & Investment Properties",
+    description:
+      "Find verified commercial projects in Faridabad. Explore office spaces, retail shops, SCO plots, food courts and investment opportunities in prime locations.",
+    url: "https://www.commercialprojectsinfaridabad.com/",
+    siteName: "Commercial Projects in Faridabad",
+    type: "website",
+  },
+
+  twitter: {
+    card: "summary_large_image",
+    title:
+      "Commercial Projects in Faridabad | Office Spaces, Retail Shops & Investment Properties",
+    description:
+      "Explore premium commercial projects in Faridabad with verified listings, office spaces, retail shops and investment opportunities.",
+  },
 };
 
 export default function RootLayout({ children }) {
@@ -34,7 +77,7 @@ export default function RootLayout({ children }) {
           <Navbar />
           {children}
           <ScrollToTop />
-                    <Toaster position="top-right" reverseOrder={false} />
+                    {/* <Toaster position="top-right" reverseOrder={false} /> */}
 
           <Footer/>
           </BlogProvider>
