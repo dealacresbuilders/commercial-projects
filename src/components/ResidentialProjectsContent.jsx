@@ -8,9 +8,9 @@ export default function ResidentialProjectsContent() {
 
           {/* HEADING */}
           <h2 className="mt-3 text-2xl md:text-4xl font-bold leading-tight text-white max-w-5xl">
-            Your Complete Guide to Commercial Real Estate in Faridabad
+            WHY CHOOSE US
             <span className="text-[#FFA6A6]">
-              {" "}— Office Spaces, Retail Shops & Investment Opportunities
+              {" "}Everything That Makes This Platform Different
             </span>
           </h2>
 
@@ -27,27 +27,42 @@ export default function ResidentialProjectsContent() {
             </p>
 
             <p className="text-base md:text-lg leading-8 md:leading-9 text-gray-300">
-              Commercial real estate in Faridabad includes premium office spaces, retail shops, SCO plots, food courts, business suites, corporate towers, and mixed-use developments. Prime locations such as Sector 79, Sector 81, Sector 84, Sector 88, Sector 89, Neharpar (Greater Faridabad), Mathura Road, and NIT Faridabad continue to attract investors due to high footfall and growing infrastructure.
+              Exclusively Commercial. No Residential Noise. Most property portals mix flats, villas, and plots with office spaces and shops — making your search frustrating and slow. This platform lists only commercial properties in Faridabad. Every result you see is relevant to your business or investment requirement. Whether you need 300 sq ft or 30,000 sq ft, every listing here is a commercial space, nothing else.
+
+
+Comprehensive Coverage Across All of Faridabad From the premium office corridors of Sector 15, 16, and 20 to the industrial zones of Ballabhgarh and Sector 58–65, from the high-street retail strips of NIT Faridabad to the NH-44 showroom belt — our directory covers every significant commercial location in the city. We add new listings across all areas regularly so your options are never limited to one pocket of the market.
+
             </p>
 
             <p className="text-base md:text-lg leading-8 md:leading-9 text-gray-300">
-              Investors are increasingly choosing Faridabad because commercial properties offer attractive rental yields, long-term capital appreciation, and lower entry costs compared to Gurugram and Noida. Retail shops and office spaces in well-planned commercial hubs have shown strong demand from brands, startups, and service businesses.
+              All Property Types Under One Roof Commercial real estate is not one-size-fits-all. We list office spaces, retail shops, SCO (Shop-cum-Office) units, showrooms, IT park floors, co-working spaces, commercial plots, warehouses, cold storage units, and industrial sheds — all in one place. No matter what your commercial requirement is, you will find relevant options without switching between multiple platforms.
+
+
+Verified Listings With Real Information Every property listed on this platform includes accurate area details, pricing, photographs, exact location, and direct contact information of the owner or authorised representative. We regularly review and update listings to remove outdated information. What you see is what exists — no ghost listings, no bait-and-switch properties
+
             </p>
 
             <p className="text-base md:text-lg leading-8 md:leading-9 text-gray-300">
-              Our platform provides detailed information about commercial projects, including builder reputation, RERA registration, floor plans, pricing, payment plans, possession timelines, location advantages, and investment potential. Every listing is carefully reviewed to help investors make informed decisions.
+              Direct Connection — No Middlemen Delay When you find a property you like, you contact the owner or their agent directly through the listing. There is no unnecessary intermediary layer slowing down your inquiry. Faster response, faster site visit, faster decision — that is the efficiency this platform is built around.
+
+
+Built for Faridabad's Unique Market Faridabad has its own commercial micro-markets, pricing dynamics, and growth corridors that a generic national portal will never understand. This platform is built specifically around Faridabad — its sectors, its roads, its infrastructure developments, and its commercial categories. Every filter, every feature, and every listing category has been designed keeping Faridabad's real estate ecosystem in mind.
+
+
+Free to Search, Easy to Use Searching for commercial properties on this platform costs you nothing. Browse by property type, location, size, or budget — all for free. The interface is clean and mobile-friendly so you can search from your office, your car, or your construction site without any friction.
+
             </p>
 
             <p className="text-base md:text-lg leading-8 md:leading-9 text-gray-300">
-              Whether you're looking for a premium office in a corporate tower, a high-street retail shop, a food court investment, or a commercial space for your own business, our directory helps you compare projects, evaluate opportunities, and connect directly with trusted developers.
+             A Platform for Investors, Not Just Occupiers We understand that many users are not looking for a property to occupy — they are looking for a commercial asset that generates rental income. Our listings include return-on-investment data wherever available, and our FAQs and content are written to help investors evaluate yield potential, capital appreciation trends, and legal due diligence in Faridabad's commercial market.
             </p>
 
             <p className="text-base md:text-lg leading-8 md:leading-9 text-gray-300">
-              We regularly update project inventory, pricing, and availability to ensure that investors always have access to the latest market opportunities. From small-ticket investments to large-scale commercial assets, Faridabad offers options for every budget and investment strategy.
+              Regularly Updated With New Inventory Faridabad's commercial market moves fast. New projects launch. Businesses relocate. Properties that were unavailable six months ago come back to market. Our listings are updated multiple times a week so you are always looking at current, available inventory — not a stale database that was last refreshed months ago.
             </p>
 
             <p className="text-base md:text-lg leading-8 md:leading-9 text-gray-300">
-              Explore verified commercial projects, discover emerging business locations, compare rental yield opportunities, and stay informed about the latest developments in Faridabad's commercial real estate market — all in one place.
+              A Trustworthy Resource for a High-Stakes Decision Renting or buying commercial property is one of the most significant financial decisions a business owner or investor makes. This platform is built with that weight in mind — accurate information, transparent listings, and content that helps you make informed decisions rather than rushed ones. We are here to make Faridabad's commercial property market easier to navigate for everyone.
             </p>
           </div>
         </div>

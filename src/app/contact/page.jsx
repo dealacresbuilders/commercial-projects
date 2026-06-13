@@ -2,36 +2,51 @@ import React from "react";
 import ContactPage from "./ContactPage";
 
 
-// export async function generateMetadata() {
-//   return {
-//    title:
-//   "Commercial Projects Blog | New Launches, Property Updates & Investment Insights in Faridabad",
+export async function generateMetadata() {
+  return {
+    title:
+      "Contact Us | Commercial Projects in Faridabad - Property Assistance & Support",
 
-// description:
-//   "Explore the latest blogs on commercial projects in Faridabad, new project launches, luxury apartments, builder floors, affordable housing developments, investment opportunities, market trends, and expert home buying advice.",
+    description:
+      "Get in touch with Commercial Projects in Faridabad for project inquiries, site visits, investment opportunities, commercial property guidance, and expert support across Faridabad.",
 
-// keywords: [
-//   "commercial projects Faridabad",
-//   "new commercial projects Faridabad",
-//   "luxury apartments Faridabad",
-//   "builder floors Faridabad",
-//   "affordable housing Faridabad",
-//   "upcoming projects Faridabad",
-//   "property investment Faridabad",
-//   "real estate trends Faridabad",
-//   "home buying guide Faridabad",
-//   "best commercial projects Faridabad",
-//   "commercial property news Faridabad",
-//   "Nehar Par projects Faridabad",
-//   "apartments in Faridabad",
-//   "housing projects Faridabad",
-//   "real estate blog Faridabad"
-// ],
-//     alternates: {
-//       canonical: "www.commercialprojectsinfaridabad.com/contact", // 🔥 apna real domain yaha replace karna
-//     },
-//   };
-// }
+    keywords: [
+      "contact commercial projects Faridabad",
+      "commercial property consultant Faridabad",
+      "commercial real estate Faridabad",
+      "property inquiry Faridabad",
+      "office space Faridabad",
+      "retail shop investment Faridabad",
+      "commercial property support",
+      "Faridabad property assistance",
+      "commercial project consultation",
+      "real estate contact Faridabad"
+    ],
+    alternates: {
+      canonical:
+        "https://www.commercialprojectsinfaridabad.com/contact",
+    },
+
+    openGraph: {
+      title:
+        "Contact Us | Commercial Projects in Faridabad",
+      description:
+        "Contact our team for commercial property inquiries, site visits, project details, and investment opportunities in Faridabad.",
+      url:
+        "https://www.commercialprojectsinfaridabad.com/contact",
+      siteName: "Commercial Projects in Faridabad",
+      type: "website",
+    },
+
+    twitter: {
+      card: "summary_large_image",
+      title:
+        "Contact Us | Commercial Projects in Faridabad",
+      description:
+        "Reach out for commercial property assistance, project information, and investment guidance in Faridabad.",
+    },
+  };
+}
 
 const Page = () => {
   return (

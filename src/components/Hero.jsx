@@ -82,7 +82,7 @@ setPopup({
   };
 
   return (
-    <section className="relative px-4 sm:px-6 py-20 bg-gradient-to-br from-[#111827] via-[#1f2937] to-[#0f172a]">
+    <section className="relative px-4 sm:px-6 py-8 bg-gradient-to-br from-[#111827] via-[#1f2937] to-[#0f172a]">
       <div className="max-w-7xl mx-auto grid md:grid-cols-12 gap-12 items-center">
  <AlertPopup
     open={popup.open}
@@ -98,21 +98,21 @@ setPopup({
   />
         {/* LEFT CONTENT */}
         <div className="md:col-span-7 lg:col-span-8 text-white">
-          <h1 className="text-4xl lg:text-5xl font-bold mb-6 leading-tight">
-            Premium <span className="text-[#FFA6A6]">Commercial Projects</span> in Faridabad
+          <h1 className="text-2xl lg:text-4xl font-bold mb-6 leading-tight">
+            Find Your <span className="text-[#FFA6A6]">Commercial Property</span> in Faridabad Today
           </h1>
 
-          <p className="text-lg max-w-2xl text-gray-300 leading-relaxed">
-            Discover high-potential commercial properties in Faridabad designed 
-            for business growth and long-term investment returns. From modern 
-            office spaces and retail shops to corporate floors and IT parks, 
-            we connect you with verified and strategically located projects.
+          <p className="text-lg max-w-5xl text-gray-300 leading-relaxed">
+           Faridabad is no longer just Haryana's industrial town — it is one of the National Capital Region's fastest-rising commercial real estate destinations. With seamless connectivity to South Delhi via NH-44, an operational metro corridor, and a resident population of over 1.8 million, the commercial demand across retail, office, warehouse, and industrial segments has never been stronger.
+Whether you are a startup hunting for your first office space, a retail brand looking for a high-footfall shop, a logistics company scouting warehouse space, or an investor building a commercial portfolio — this is the only platform you need.
+
           </p>
 
-          <p className="mt-6 text-gray-400 max-w-2xl">
-            Whether you are an investor, business owner, or brand expanding 
-            operations, our expert team ensures transparent deals, prime 
-            connectivity, and strong rental yield opportunities.
+          <p className="mt-6 text-gray-400 max-w-6xl">
+            We are Faridabad's dedicated commercial property directory. Every listing on this platform is a commercial space — no residential clutter, no irrelevant results. Browse verified offices, retail shops, SCO properties, showrooms, industrial plots, warehouses, and co-working spaces across Sector 15, 16, 20, NIT Faridabad, Ballabhgarh, Old Faridabad, and every major commercial corridor in the city.
+Each listing includes carpet area, price, photographs, location, and direct contact details — so you can move from search to site visit without wasting a single day.
+Your next business address is here. Start exploring.
+
           </p>
         </div>
 
