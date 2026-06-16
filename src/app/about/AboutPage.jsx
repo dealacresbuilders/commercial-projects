@@ -74,43 +74,155 @@ This is Faridabad's commercial real estate resource. And we are glad you found i
         </div>
 
         {/* ================= OUR MISSION ================= */}
-        <div className="text-center max-w-6xl mx-auto mb-20">
-          <h2 className="text-3xl font-bold">
-            Who We Are and What We Stand For
-          </h2>
+       <div className="text-center max-w-6xl mx-auto mb-20">
+  <h2 className="text-3xl font-bold mb-12">
+    Who We Are and What We Stand For
+  </h2>
 
-          <p className="text-gray-400 mt-6 leading-relaxed">
-            Built Exclusively for Faridabad's Commercial Market Every decision we have made in building this platform — from the listing categories to the search filters to the content we publish — has been made with Faridabad's commercial real estate market in mind. We are not a national portal that has added Faridabad as one of 500 cities. We are a platform built from the ground up for this specific city and its specific commercial property ecosystem.
+  <div className="grid md:grid-cols-2 gap-8 text-left">
 
+    <div className="bg-gray-900 border border-gray-800 rounded-2xl p-8 shadow-lg">
+      <h3 className="text-xl font-semibold mb-4 text-white">
+        Built Exclusively for Faridabad's Commercial Market
+      </h3>
+      <p className="text-gray-400 leading-relaxed">
+        Every decision we have made in building this platform — from the listing
+        categories to the search filters to the content we publish — has been
+        made with Faridabad's commercial real estate market in mind. We are not
+        a national portal that has added Faridabad as one of 500 cities. We are
+        a platform built from the ground up for this specific city and its
+        specific commercial property ecosystem.
+      </p>
+    </div>
 
-Independent, Unbiased, and Broker-Neutral We do not represent any developer, builder, or brokerage firm. We do not favour any listing over another based on commercial arrangements. Every property listed on this platform gets equal visibility based on its relevance to the searcher's query. Our goal is to help you find the right property — not to push you toward a property that earns us the highest commission.
+    <div className="bg-gray-900 border border-gray-800 rounded-2xl p-8 shadow-lg">
+      <h3 className="text-xl font-semibold mb-4 text-white">
+        Independent, Unbiased, and Broker-Neutral
+      </h3>
+      <p className="text-gray-400 leading-relaxed">
+        We do not represent any developer, builder, or brokerage firm. We do not
+        favour any listing over another based on commercial arrangements. Every
+        property listed on this platform gets equal visibility based on its
+        relevance to the searcher's query. Our goal is to help you find the
+        right property — not to push you toward a property that earns us the
+        highest commission.
+      </p>
+    </div>
 
+    <div className="bg-gray-900 border border-gray-800 rounded-2xl p-8 shadow-lg">
+      <h3 className="text-xl font-semibold mb-4 text-white">
+        Committed to Listing Accuracy
+      </h3>
+      <p className="text-gray-400 leading-relaxed">
+        One of the biggest frustrations with online property search is
+        encountering listings that are outdated, inaccurate, or simply
+        fabricated to generate inquiries. We take listing accuracy seriously.
+        Our team reviews new listings before they go live, periodically audits
+        existing listings, and removes properties that are no longer available.
+        We cannot guarantee perfection, but we are committed to maintaining the
+        highest listing quality standards in Faridabad's commercial property
+        space.
+      </p>
+    </div>
 
-Committed to Listing Accuracy One of the biggest frustrations with online property search is encountering listings that are outdated, inaccurate, or simply fabricated to generate inquiries. We take listing accuracy seriously. Our team reviews new listings before they go live, periodically audits existing listings, and removes properties that are no longer available. We cannot guarantee perfection, but we are committed to maintaining the highest listing quality standards in Faridabad's commercial property space.
+    <div className="bg-gray-900 border border-gray-800 rounded-2xl p-8 shadow-lg">
+      <h3 className="text-xl font-semibold mb-4 text-white">
+        Covering Every Commercial Category
+      </h3>
+      <p className="text-gray-400 leading-relaxed">
+        Faridabad's commercial market is genuinely diverse — it spans premium
+        offices, retail high streets, industrial estates, logistics parks, and
+        emerging mixed-use developments. Our platform reflects this diversity.
+        We list office spaces, retail shops, SCO units, showrooms, warehouses,
+        industrial sheds, commercial plots, co-working spaces, and IT park
+        floors. No matter what type of commercial property you are looking for,
+        this is the platform that has it.
+      </p>
+    </div>
 
+    <div className="bg-gray-900 border border-gray-800 rounded-2xl p-8 shadow-lg">
+      <h3 className="text-xl font-semibold mb-4 text-white">
+        Designed for Both Buyers and Investors
+      </h3>
+      <p className="text-gray-400 leading-relaxed">
+        We understand that not everyone searching for commercial property
+        intends to occupy it. A significant portion of our users are investors
+        looking for high-yield commercial assets in Faridabad. Our platform and
+        content are designed to serve both occupiers and investors equally —
+        with listing details, market information, and FAQ content that helps
+        both audiences make informed decisions.
+      </p>
+    </div>
 
-Covering Every Commercial Category Faridabad's commercial market is genuinely diverse — it spans premium offices, retail high streets, industrial estates, logistics parks, and emerging mixed-use developments. Our platform reflects this diversity. We list office spaces, retail shops, SCO units, showrooms, warehouses, industrial sheds, commercial plots, co-working spaces, and IT park floors. No matter what type of commercial property you are looking for, this is the platform that has it.
+    <div className="bg-gray-900 border border-gray-800 rounded-2xl p-8 shadow-lg">
+      <h3 className="text-xl font-semibold mb-4 text-white">
+        A Growing, Living Directory
+      </h3>
+      <p className="text-gray-400 leading-relaxed">
+        Faridabad's commercial real estate market does not stand still, and
+        neither does our platform. We add new listings regularly, update our
+        market content to reflect current conditions, and continuously expand
+        our coverage of emerging commercial areas in the city. Sectors 58–65,
+        the areas near new metro stations, and the developing NH-48 extension
+        corridor are among the zones we are actively expanding our inventory in.
+      </p>
+    </div>
 
+    <div className="bg-gray-900 border border-gray-800 rounded-2xl p-8 shadow-lg">
+      <h3 className="text-xl font-semibold mb-4 text-white">
+        Transparent and Free to Search
+      </h3>
+      <p className="text-gray-400 leading-relaxed">
+        We believe that access to property information should not carry a price
+        tag for the searcher. Browsing every listing on this platform is
+        completely free — no registration wall, no hidden fee, no paid tier
+        required to see contact details. Property seekers deserve full access to
+        market information without being made to pay for it.
+      </p>
+    </div>
 
-Designed for Both Buyers and Investors We understand that not everyone searching for commercial property intends to occupy it. A significant portion of our users are investors looking for high-yield commercial assets in Faridabad. Our platform and content are designed to serve both occupiers and investors equally — with listing details, market information, and FAQ content that helps both audiences make informed decisions.
+    <div className="bg-gray-900 border border-gray-800 rounded-2xl p-8 shadow-lg">
+      <h3 className="text-xl font-semibold mb-4 text-white">
+        Rooted in the Local Market
+      </h3>
+      <p className="text-gray-400 leading-relaxed">
+        We understand Faridabad's commercial geography — which sectors are
+        mature, which are emerging, which roads carry the most footfall, and
+        which industrial zones have the best infrastructure. This local
+        knowledge informs everything from our listing categories to the market
+        information we publish. We are not outsiders describing Faridabad's
+        market from a distance — we are embedded in it.
+      </p>
+    </div>
 
+    <div className="bg-gray-900 border border-gray-800 rounded-2xl p-8 shadow-lg">
+      <h3 className="text-xl font-semibold mb-4 text-white">
+        Here for the Long Term
+      </h3>
+      <p className="text-gray-400 leading-relaxed">
+        We are committed to building the most reliable, comprehensive, and
+        useful commercial property resource that Faridabad has ever had. That is
+        not a short-term project — it is an ongoing commitment to this city's
+        business community, investors, and property professionals. Every
+        improvement we make to this platform is made with that long-term vision
+        in mind.
+      </p>
+    </div>
 
-A Growing, Living Directory Faridabad's commercial real estate market does not stand still, and neither does our platform. We add new listings regularly, update our market content to reflect current conditions, and continuously expand our coverage of emerging commercial areas in the city. Sectors 58–65, the areas near new metro stations, and the developing NH-48 extension corridor are among the zones we are actively expanding our inventory in.
+    <div className="bg-gray-900 border border-gray-800 rounded-2xl p-8 shadow-lg md:col-span-2">
+      <h3 className="text-xl font-semibold mb-4 text-white">
+        Our Promise to Every User
+      </h3>
+      <p className="text-gray-400 leading-relaxed">
+        Whether you are a first-time commercial property buyer, a growing
+        business looking to expand, or a seasoned investor — you deserve
+        accurate information, relevant listings, and a platform that respects
+        your time. That is what we are here to deliver, every single day.
+      </p>
+    </div>
 
-
-Transparent and Free to Search We believe that access to property information should not carry a price tag for the searcher. Browsing every listing on this platform is completely free — no registration wall, no hidden fee, no paid tier required to see contact details. Property seekers deserve full access to market information without being made to pay for it.
-
-
-Rooted in the Local Market We understand Faridabad's commercial geography — which sectors are mature, which are emerging, which roads carry the most footfall, and which industrial zones have the best infrastructure. This local knowledge informs everything from our listing categories to the market information we publish. We are not outsiders describing Faridabad's market from a distance — we are embedded in it.
-
-
-Here for the Long Term We are committed to building the most reliable, comprehensive, and useful commercial property resource that Faridabad has ever had. That is not a short-term project — it is an ongoing commitment to this city's business community, investors, and property professionals. Every improvement we make to this platform is made with that long-term vision in mind.
-
-
-Our Promise to Every User Whether you are a first-time commercial property buyer, a growing business looking to expand, or a seasoned investor — you deserve accurate information, relevant listings, and a platform that respects your time. That is what we are here to deliver, every single day.
-
-          </p>
-        </div>
+  </div>
+</div>
 
         {/* ================= WHY CHOOSE US ================= */}
         <div className="mb-32">
