@@ -9,24 +9,20 @@ export async function generateMetadata() {
   "About Us | Faridabad Commercial Property Directory",
 
 description:
-  "commercial property directory Faridabad, about us real estate Faridabad, best commercial real estate platform Faridabad, verified commercial listings Faridabad",
-
+  "Learn how our Faridabad commercial property directory verifies listings for offices, retail shops & warehouses, helping buyers decide with confidence.",
 keywords: [
-  "commercial projects Faridabad",
-  "new commercial projects Faridabad",
-  "luxury apartments Faridabad",
-  "builder floors Faridabad",
-  "affordable housing Faridabad",
-  "upcoming projects Faridabad",
-  "property investment Faridabad",
-  "real estate trends Faridabad",
-  "home buying guide Faridabad",
-  "best commercial projects Faridabad",
-  "commercial property news Faridabad",
-  "Nehar Par projects Faridabad",
-  "apartments in Faridabad",
-  "housing projects Faridabad",
-  "real estate blog Faridabad"
+  "faridabad commercial property directory",
+  "commercial real estate platform faridabad",
+  "verified commercial listings faridabad",
+  "about commercial property faridabad",
+  "most trusted commercial property platform in faridabad",
+  "how commercial listings are verified in faridabad",
+  "independent commercial real estate directory faridabad",
+  "broker-neutral",
+  "listing accuracy",
+  "sco properties",
+  "industrial plots",
+  "investor-focused content"
 ],
     alternates: {
       canonical: "www.commercialprojectsinfaridabad.com/about", // 🔥 apna real domain yaha replace karna

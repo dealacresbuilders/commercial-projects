@@ -5,23 +5,24 @@ import ContactPage from "./ContactPage";
 export async function generateMetadata() {
   return {
     title:
-      "Contact Us | Commercial Projects in Faridabad - Property Assistance & Support",
+      "Contact Us | Commercial Property in Faridabad Enquiry",
 
     description:
-      "Get in touch with Commercial Projects in Faridabad for project inquiries, site visits, investment opportunities, commercial property guidance, and expert support across Faridabad.",
-
-    keywords: [
-      "contact commercial projects Faridabad",
-      "commercial property consultant Faridabad",
-      "commercial real estate Faridabad",
-      "property inquiry Faridabad",
-      "office space Faridabad",
-      "retail shop investment Faridabad",
-      "commercial property support",
-      "Faridabad property assistance",
-      "commercial project consultation",
-      "real estate contact Faridabad"
-    ],
+      "Connect with our Faridabad commercial property experts for a free consultation. Get help finding offices, retail shops or warehouses & book a site visit today.",
+keywords: [
+  "contact commercial property faridabad",
+  "commercial property consultant faridabad",
+  "free property consultation faridabad",
+  "faridabad commercial real estate enquiry",
+  "book a free consultation for commercial property in faridabad",
+  "schedule a site visit commercial property faridabad",
+  "talk to a faridabad commercial property expert",
+  "enquiry form",
+  "site visit",
+  "property advisor",
+  "request callback",
+  "investment consultation"
+],
     alternates: {
       canonical:
         "https://www.commercialprojectsinfaridabad.com/contact",

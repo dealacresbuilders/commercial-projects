@@ -19,10 +19,10 @@ const geistMono = Geist_Mono({
 
 export const metadata = {
   title:
-    "Commercial Property in Faridabad | Buy, Rent & Invest ",
+    "Commercial Property in Faridabad | Buy, Rent & Invest",
 
   description:
-    "Find verified commercial properties in Faridabad — offices, retail shops, SCOs, warehouses & more. NCR's dedicated commercial real estate directory. Search free.",
+    "Find verified commercial properties in Faridabad — offices, retail shops, SCOs & warehouses. NCR's dedicated commercial real estate directory. Search free.",
 
   keywords: [
     "commercial projects in Faridabad",
