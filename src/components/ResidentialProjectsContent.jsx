@@ -1,6 +1,8 @@
 "use client";
 
+import { useState } from "react";
 export default function ResidentialProjectsContent() {
+    const [expanded, setExpanded] = useState(false);
   return (
     <section className="w-full bg-[#0f172a] py-6 px-4">
       <div className="max-w-7xl mx-auto">
@@ -15,7 +17,11 @@ export default function ResidentialProjectsContent() {
           </h2>
 
           {/* CONTENT */}
-          <div className="mt-8 space-y-7">
+          <div
+  className={`mt-8 space-y-7 overflow-hidden transition-all duration-500 ${
+    expanded ? "max-h-[5000px]" : "max-h-[200px]"
+  }`}
+>
 
             <p className="text-base md:text-lg leading-8 md:leading-9 text-gray-300">
               Welcome to{" "}
@@ -65,6 +71,24 @@ Free to Search, Easy to Use Searching for commercial properties on this platform
               A Trustworthy Resource for a High-Stakes Decision Renting or buying commercial property is one of the most significant financial decisions a business owner or investor makes. This platform is built with that weight in mind — accurate information, transparent listings, and content that helps you make informed decisions rather than rushed ones. We are here to make Faridabad's commercial property market easier to navigate for everyone.
             </p>
           </div>
+          <div className="mt-8 flex justify-center">
+  <button
+    onClick={() => setExpanded(!expanded)}
+    className="
+      px-6
+      py-3
+      rounded-full
+      bg-[#FFA6A6]
+      text-[#0f172a]
+      font-semibold
+      hover:scale-105
+      transition-all
+      duration-300
+    "
+  >
+    {expanded ? "Read Less" : "Read More"}
+  </button>
+</div>
         </div>
       </div>
     </section>
