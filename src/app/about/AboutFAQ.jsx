@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import { ChevronDown } from "lucide-react";
+import DisclaimerSection from "./DisclaimerSection";
 
 export default function AboutFAQ() {
   const [openIndex, setOpenIndex] = useState(0);
@@ -124,6 +125,7 @@ export default function AboutFAQ() {
         </div>
 
       </div>
+      <DisclaimerSection/>
     </section>
   );
 }
