@@ -70,7 +70,7 @@ flex-col
                 {/* Image */}
                 <div className="relative h-48 overflow-hidden">
                   <Image
-                    src={item.imgurlink || "/placeholder.jpg"}
+                    src={item.img?.url || "/placeholder.jpg"}
                     alt={item.projectName}
                     fill
                     className="object-cover group-hover:scale-110 transition-all duration-700"
