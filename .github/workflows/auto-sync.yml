@@ -21,12 +21,12 @@ jobs:
           git config --global user.name "github-actions"
 
       # Main Plot In Repo
-      # - name: Sync to Main Plot In Repo
-      #   continue-on-error: true
-      #   run: |
-      #     git remote remove mirror || true
-      #     git remote add mirror https://x-access-token:${{ secrets.FARIDABAD_ACESS_TOKEN }}@github.com/dealacresbuilders/commercial-projects.git
-      #     git push mirror HEAD:main --force
+      - name: Sync to Main Plot In Repo
+        continue-on-error: true
+        run: |
+          git remote remove mirror || true
+          git remote add mirror https://x-access-token:${{ secrets.FARIDABAD_ACESS_TOKEN }}@github.com/dealacresbuilders/commercial-projects.git
+          git push mirror HEAD:main --force
 
       # Mukesh Frontend Repo
       - name: Sync to Mukesh Frontend Repo
